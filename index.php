@@ -161,9 +161,6 @@
 
       // Get field values
       const name = document.getElementById('name').value.trim();
-      const programme = document.getElementById('programme').value;
-      const year = document.getElementById('year').value;
-      const semester = document.getElementById('semester').value;
       const password = document.getElementById('password').value;
 
       // Validation
@@ -172,28 +169,10 @@
         return;
       }
 
-      if (!programme) {
-        alert('Please select your programme.');
-        return;
-      }
-
-      if (!year) {
-        alert('Please select your year.');
-        return;
-      }
-
-      if (!semester) {
-        alert('Please select your semester.');
-        return;
-      }
-
       if (password.length < 6) {
         alert('Password must be at least 6 characters long.');
         return;
       }
-
-      // If all valid → simulate successful login
-      alert(`✅ Login successful!\nWelcome, ${name}!\nProgramme: ${document.getElementById('programme').options[document.getElementById('programme').selectedIndex].text}`);
       
     });
 
