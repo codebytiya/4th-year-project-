@@ -423,9 +423,9 @@
 
     <div class="container">
         <div class="nav-tabs">
-            <div class="tab active" data-target="dashboard">Dashboard</div>
+            <div class="tab" data-target="dashboard">Dashboard</div>
             <div class="tab" data-target="grades">Grades</div>
-            <div class="tab" data-target="transcript">Transcript</div>
+            <div class="tab active" data-target="transcript">Transcript</div>
             <div class="tab" data-target="progress">Academic Progress</div>
         </div>
 
