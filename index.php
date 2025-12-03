@@ -161,9 +161,6 @@
 
       // Get field values
       const name = document.getElementById('name').value.trim();
-      const programme = document.getElementById('programme').value;
-      const year = document.getElementById('year').value;
-      const semester = document.getElementById('semester').value;
       const password = document.getElementById('password').value;
 
       // Validation
@@ -176,9 +173,6 @@
         alert('Password must be at least 6 characters long.');
         return;
       }
-
-      // If all valid → simulate successful login
-      alert(`✅ Login successful!\nWelcome, ${name}!\nProgramme: ${document.getElementById('programme').options[document.getElementById('programme').selectedIndex].text}`);
       
     });
 
