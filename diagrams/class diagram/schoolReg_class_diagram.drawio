@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="tpf1rDUi0tNLqYviJ2Z7" name="Page-1">
-        <mxGraphModel dx="1072" dy="513" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="751" dy="644" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -41,7 +41,7 @@
                     <mxGeometry x="10" y="20" width="180" height="100" as="geometry"/>
                 </mxCell>
                 <mxCell id="14" value="Exams" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" parent="1" vertex="1">
-                    <mxGeometry x="280" y="800" width="360" height="120" as="geometry"/>
+                    <mxGeometry x="350" y="800" width="360" height="120" as="geometry"/>
                 </mxCell>
                 <mxCell id="15" value="-id: int (PK)&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;-module_instance_id: int (FK)&lt;br&gt;&lt;/font&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;-exam_type: Enum (&#39;midterm&#39;, &#39;final&#39;,&#39;clash&#39;, &#39;repear&#39;,&#39;deffared&#39;)&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;-exam_date: date&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="14" vertex="1">
                     <mxGeometry x="10" y="35" width="350" height="70" as="geometry"/>
@@ -67,8 +67,8 @@
                 <mxCell id="72" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="27" target="14" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
-                            <mxPoint x="445" y="710"/>
-                            <mxPoint x="460" y="720"/>
+                            <mxPoint x="445" y="760"/>
+                            <mxPoint x="530" y="760"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
@@ -81,18 +81,48 @@
                         </Array>
                     </mxGeometry>
                 </mxCell>
+                <mxCell id="110" style="edgeStyle=none;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="27" target="29">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="390" y="720"/>
+                            <mxPoint x="310" y="720"/>
+                            <mxPoint x="310" y="880"/>
+                            <mxPoint x="340" y="970"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="113" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="110">
+                    <mxGeometry x="-0.922" relative="1" as="geometry">
+                        <mxPoint x="-12" y="1" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="114" value="0..*" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="110">
+                    <mxGeometry x="0.8726" relative="1" as="geometry">
+                        <mxPoint x="20" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
                 <mxCell id="27" value="module_instances" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="340" y="530" width="210" height="120" as="geometry"/>
                 </mxCell>
                 <mxCell id="28" value="-id: int (PK)&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;-module_id: int (FK)&lt;br&gt;&lt;/font&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;-course_id: int (FK)&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;-lecture_id: int (FK)&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;-semester: Enum (&#39;1&#39;,&#39;2&#39;,&#39;3&#39;,&#39;4&#39;)&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="27" vertex="1">
                     <mxGeometry x="10" y="25" width="180" height="90" as="geometry"/>
                 </mxCell>
-                <mxCell id="62" style="edgeStyle=none;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="29" target="31" edge="1">
+                <mxCell id="62" style="edgeStyle=none;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="29" target="31" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
-                            <mxPoint x="340" y="970"/>
+                            <mxPoint x="290" y="970"/>
                             <mxPoint x="140" y="970"/>
                         </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="111" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="62">
+                    <mxGeometry x="-0.887" relative="1" as="geometry">
+                        <mxPoint x="-10" y="5" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="112" value="0..*" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="62">
+                    <mxGeometry x="0.8074" y="-1" relative="1" as="geometry">
+                        <mxPoint x="19" as="offset"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="29" value="grade_components" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
