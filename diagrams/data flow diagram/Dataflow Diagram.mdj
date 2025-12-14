@@ -1,0 +1,873 @@
+{
+	"_type": "Project",
+	"_id": "AAAAAAFF+h6SjaM2Hec=",
+	"name": "Untitled",
+	"ownedElements": [
+		{
+			"_type": "UMLModel",
+			"_id": "AAAAAAFF+qBWK6M3Z8Y=",
+			"_parent": {
+				"$ref": "AAAAAAFF+h6SjaM2Hec="
+			},
+			"name": "Model",
+			"ownedElements": [
+				{
+					"_type": "UMLClassDiagram",
+					"_id": "AAAAAAFF+qBtyKM79qY=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "Main",
+					"defaultDiagram": true
+				},
+				{
+					"_type": "DFDDataFlowModel",
+					"_id": "AAAAAAGbG9PEUp3OjO0=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "DataFlowModel1",
+					"ownedElements": [
+						{
+							"_type": "DFDDiagram",
+							"_id": "AAAAAAGbG9PEUp3PHl4=",
+							"_parent": {
+								"$ref": "AAAAAAGbG9PEUp3OjO0="
+							},
+							"name": "DFDDiagram1",
+							"ownedViews": [
+								{
+									"_type": "DFDProcessView",
+									"_id": "AAAAAAGbG9YqkJ3gMcg=",
+									"_parent": {
+										"$ref": "AAAAAAGbG9PEUp3PHl4="
+									},
+									"model": {
+										"$ref": "AAAAAAGbG9Yqj53eLa0="
+									},
+									"subViews": [
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGbG9YqkJ3hu4k=",
+											"_parent": {
+												"$ref": "AAAAAAGbG9YqkJ3gMcg="
+											},
+											"font": "Arial;13;0",
+											"left": 122,
+											"top": 104,
+											"width": 64.30810546875,
+											"height": 26,
+											"text": "Student registration",
+											"wordWrap": true
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGbG9YqkJ3iD6Y=",
+											"_parent": {
+												"$ref": "AAAAAAGbG9YqkJ3gMcg="
+											},
+											"font": "Arial;13;0",
+											"left": 122,
+											"top": 77,
+											"width": 64.30810546875,
+											"height": 13
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 112,
+									"top": 72,
+									"width": 84.30810546875,
+									"height": 69,
+									"nameLabel": {
+										"$ref": "AAAAAAGbG9YqkJ3hu4k="
+									},
+									"idLabel": {
+										"$ref": "AAAAAAGbG9YqkJ3iD6Y="
+									}
+								},
+								{
+									"_type": "DFDProcessView",
+									"_id": "AAAAAAGbG9ZtLZ31Amw=",
+									"_parent": {
+										"$ref": "AAAAAAGbG9PEUp3PHl4="
+									},
+									"model": {
+										"$ref": "AAAAAAGbG9ZtLZ3zSbY="
+									},
+									"subViews": [
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGbG9ZtLZ32yO4=",
+											"_parent": {
+												"$ref": "AAAAAAGbG9ZtLZ31Amw="
+											},
+											"font": "Arial;13;0",
+											"left": 514,
+											"top": 104,
+											"width": 64.30810546875,
+											"height": 26,
+											"text": "Class registration",
+											"wordWrap": true
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGbG9ZtLZ33l0Q=",
+											"_parent": {
+												"$ref": "AAAAAAGbG9ZtLZ31Amw="
+											},
+											"font": "Arial;13;0",
+											"left": 514,
+											"top": 77,
+											"width": 64.30810546875,
+											"height": 13
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 504,
+									"top": 72,
+									"width": 84.30810546875,
+									"height": 69,
+									"nameLabel": {
+										"$ref": "AAAAAAGbG9ZtLZ32yO4="
+									},
+									"idLabel": {
+										"$ref": "AAAAAAGbG9ZtLZ33l0Q="
+									}
+								},
+								{
+									"_type": "DFDExternalEntityView",
+									"_id": "AAAAAAGbG9cVg54EznM=",
+									"_parent": {
+										"$ref": "AAAAAAGbG9PEUp3PHl4="
+									},
+									"model": {
+										"$ref": "AAAAAAGbG9cVg54CF6s="
+									},
+									"subViews": [
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGbG9cVhJ4KbsA=",
+											"_parent": {
+												"$ref": "AAAAAAGbG9cVg54EznM="
+											},
+											"font": "Arial;13;0",
+											"left": 114,
+											"top": 325,
+											"width": 87.4326171875,
+											"height": 13
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGbG9cVg54FxCY=",
+											"_parent": {
+												"$ref": "AAAAAAGbG9cVg54EznM="
+											},
+											"font": "Arial;13;0",
+											"left": 114,
+											"top": 330,
+											"width": 87.4326171875,
+											"height": 26,
+											"text": "College Student",
+											"wordWrap": true
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGbG9cVg54G7ho=",
+											"_parent": {
+												"$ref": "AAAAAAGbG9cVg54EznM="
+											},
+											"font": "Arial;13;0",
+											"left": -392,
+											"top": 72,
+											"height": 13
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 104,
+									"top": 320,
+									"width": 107.4326171875,
+									"height": 46,
+									"nameLabel": {
+										"$ref": "AAAAAAGbG9cVg54FxCY="
+									}
+								},
+								{
+									"_type": "DFDExternalEntityView",
+									"_id": "AAAAAAGbG9cnmZ4Q+GY=",
+									"_parent": {
+										"$ref": "AAAAAAGbG9PEUp3PHl4="
+									},
+									"model": {
+										"$ref": "AAAAAAGbG9cnmZ4OMS0="
+									},
+									"subViews": [
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGbG9cnmp4Wo+M=",
+											"_parent": {
+												"$ref": "AAAAAAGbG9cnmZ4Q+GY="
+											},
+											"font": "Arial;13;0",
+											"left": 498,
+											"top": 261,
+											"width": 87.4326171875,
+											"height": 13
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGbG9cnmZ4RJ0M=",
+											"_parent": {
+												"$ref": "AAAAAAGbG9cnmZ4Q+GY="
+											},
+											"font": "Arial;13;0",
+											"left": 498,
+											"top": 266,
+											"width": 87.4326171875,
+											"height": 13,
+											"text": "Lecture",
+											"wordWrap": true
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGbG9cnmZ4S+5U=",
+											"_parent": {
+												"$ref": "AAAAAAGbG9cnmZ4Q+GY="
+											},
+											"font": "Arial;13;0",
+											"left": -64,
+											"top": -128,
+											"height": 13
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 488,
+									"top": 256,
+									"width": 107.4326171875,
+									"height": 33,
+									"nameLabel": {
+										"$ref": "AAAAAAGbG9cnmZ4RJ0M="
+									}
+								},
+								{
+									"_type": "DFDExternalEntityView",
+									"_id": "AAAAAAGbG9c7Ap4cfzs=",
+									"_parent": {
+										"$ref": "AAAAAAGbG9PEUp3PHl4="
+									},
+									"model": {
+										"$ref": "AAAAAAGbG9c7Ap4aaDo="
+									},
+									"subViews": [
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGbG9c7A54icgs=",
+											"_parent": {
+												"$ref": "AAAAAAGbG9c7Ap4cfzs="
+											},
+											"font": "Arial;13;0",
+											"left": 426,
+											"top": 605,
+											"width": 87.4326171875,
+											"height": 13
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGbG9c7Ap4dCxw=",
+											"_parent": {
+												"$ref": "AAAAAAGbG9c7Ap4cfzs="
+											},
+											"font": "Arial;13;0",
+											"left": 426,
+											"top": 610,
+											"width": 87.4326171875,
+											"height": 13,
+											"text": "Administrator",
+											"wordWrap": true
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGbG9c7Ap4ezh4=",
+											"_parent": {
+												"$ref": "AAAAAAGbG9c7Ap4cfzs="
+											},
+											"font": "Arial;13;0",
+											"left": -32,
+											"top": 136,
+											"height": 13
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 416,
+									"top": 600,
+									"width": 107.4326171875,
+									"height": 33,
+									"nameLabel": {
+										"$ref": "AAAAAAGbG9c7Ap4dCxw="
+									}
+								},
+								{
+									"_type": "DFDDataStoreView",
+									"_id": "AAAAAAGbG9eTPp4ptoc=",
+									"_parent": {
+										"$ref": "AAAAAAGbG9PEUp3PHl4="
+									},
+									"model": {
+										"$ref": "AAAAAAGbG9eTPp4ngFs="
+									},
+									"subViews": [
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGbG9eTPp4qtcw=",
+											"_parent": {
+												"$ref": "AAAAAAGbG9eTPp4ptoc="
+											},
+											"font": "Arial;13;0",
+											"left": 308,
+											"top": 98,
+											"width": 65.76171875,
+											"height": 26,
+											"text": "Student Database",
+											"wordWrap": true
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGbG9eTPp4rhdg=",
+											"_parent": {
+												"$ref": "AAAAAAGbG9eTPp4ptoc="
+											},
+											"font": "Arial;13;0",
+											"left": 293,
+											"top": 98,
+											"height": 13
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 288,
+									"top": 88,
+									"width": 95.76171875,
+									"height": 46,
+									"nameLabel": {
+										"$ref": "AAAAAAGbG9eTPp4qtcw="
+									},
+									"idLabel": {
+										"$ref": "AAAAAAGbG9eTPp4rhdg="
+									}
+								},
+								{
+									"_type": "DFDDataStoreView",
+									"_id": "AAAAAAGbG9e82Z419Pw=",
+									"_parent": {
+										"$ref": "AAAAAAGbG9PEUp3PHl4="
+									},
+									"model": {
+										"$ref": "AAAAAAGbG9e82Z4zMIs="
+									},
+									"subViews": [
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGbG9e82Z42RfA=",
+											"_parent": {
+												"$ref": "AAAAAAGbG9e82Z419Pw="
+											},
+											"font": "Arial;13;0",
+											"left": 308,
+											"top": 442,
+											"width": 65.76171875,
+											"height": 26,
+											"text": "Lecture Database",
+											"wordWrap": true
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGbG9e82Z43rIg=",
+											"_parent": {
+												"$ref": "AAAAAAGbG9e82Z419Pw="
+											},
+											"font": "Arial;13;0",
+											"left": 293,
+											"top": 442,
+											"height": 13
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 288,
+									"top": 432,
+									"width": 95.76171875,
+									"height": 46,
+									"nameLabel": {
+										"$ref": "AAAAAAGbG9e82Z42RfA="
+									},
+									"idLabel": {
+										"$ref": "AAAAAAGbG9e82Z43rIg="
+									}
+								},
+								{
+									"_type": "DFDDataFlowView",
+									"_id": "AAAAAAGbG9n6/55Hd14=",
+									"_parent": {
+										"$ref": "AAAAAAGbG9PEUp3PHl4="
+									},
+									"model": {
+										"$ref": "AAAAAAGbG9n6/55FAac="
+									},
+									"subViews": [
+										{
+											"_type": "EdgeLabelView",
+											"_id": "AAAAAAGbG9n7AJ5IKz8=",
+											"_parent": {
+												"$ref": "AAAAAAGbG9n6/55Hd14="
+											},
+											"model": {
+												"$ref": "AAAAAAGbG9n6/55FAac="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": 139,
+											"top": 223,
+											"height": 13,
+											"alpha": 1.5707963267948966,
+											"distance": 15,
+											"hostEdge": {
+												"$ref": "AAAAAAGbG9n6/55Hd14="
+											},
+											"edgePosition": 1
+										}
+									],
+									"font": "Arial;13;0",
+									"head": {
+										"$ref": "AAAAAAGbG9YqkJ3gMcg="
+									},
+									"tail": {
+										"$ref": "AAAAAAGbG9cVg54EznM="
+									},
+									"lineStyle": 2,
+									"points": "154:320;154:140",
+									"nameLabel": {
+										"$ref": "AAAAAAGbG9n7AJ5IKz8="
+									}
+								},
+								{
+									"_type": "DFDDataFlowView",
+									"_id": "AAAAAAGbG9ovdJ5RZi0=",
+									"_parent": {
+										"$ref": "AAAAAAGbG9PEUp3PHl4="
+									},
+									"model": {
+										"$ref": "AAAAAAGbG9ovdJ5PW4s="
+									},
+									"subViews": [
+										{
+											"_type": "EdgeLabelView",
+											"_id": "AAAAAAGbG9ovdZ5SGJE=",
+											"_parent": {
+												"$ref": "AAAAAAGbG9ovdJ5RZi0="
+											},
+											"model": {
+												"$ref": "AAAAAAGbG9ovdJ5PW4s="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": 241,
+											"top": 88,
+											"height": 13,
+											"alpha": 1.5707963267948966,
+											"distance": 15,
+											"hostEdge": {
+												"$ref": "AAAAAAGbG9ovdJ5RZi0="
+											},
+											"edgePosition": 1
+										}
+									],
+									"font": "Arial;13;0",
+									"head": {
+										"$ref": "AAAAAAGbG9eTPp4ptoc="
+									},
+									"tail": {
+										"$ref": "AAAAAAGbG9YqkJ3gMcg="
+									},
+									"lineStyle": 2,
+									"points": "195:109;288:109",
+									"nameLabel": {
+										"$ref": "AAAAAAGbG9ovdZ5SGJE="
+									}
+								},
+								{
+									"_type": "DFDProcessView",
+									"_id": "AAAAAAGbG9rWbp5d7so=",
+									"_parent": {
+										"$ref": "AAAAAAGbG9PEUp3PHl4="
+									},
+									"model": {
+										"$ref": "AAAAAAGbG9rWbp5bahM="
+									},
+									"subViews": [
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGbG9rWbp5eVvE=",
+											"_parent": {
+												"$ref": "AAAAAAGbG9rWbp5d7so="
+											},
+											"font": "Arial;13;0",
+											"left": 514,
+											"top": 448,
+											"width": 54.18994140625,
+											"height": 26,
+											"text": "Manage Lectures",
+											"wordWrap": true
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGbG9rWbp5fHB8=",
+											"_parent": {
+												"$ref": "AAAAAAGbG9rWbp5d7so="
+											},
+											"font": "Arial;13;0",
+											"left": 514,
+											"top": 421,
+											"width": 54.18994140625,
+											"height": 13
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 504,
+									"top": 416,
+									"width": 74.18994140625,
+									"height": 69,
+									"nameLabel": {
+										"$ref": "AAAAAAGbG9rWbp5eVvE="
+									},
+									"idLabel": {
+										"$ref": "AAAAAAGbG9rWbp5fHB8="
+									}
+								},
+								{
+									"_type": "DFDProcessView",
+									"_id": "AAAAAAGbG9tatZ5u8CM=",
+									"_parent": {
+										"$ref": "AAAAAAGbG9PEUp3PHl4="
+									},
+									"model": {
+										"$ref": "AAAAAAGbG9tatZ5sVLI="
+									},
+									"subViews": [
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGbG9tatZ5vk5I=",
+											"_parent": {
+												"$ref": "AAAAAAGbG9tatZ5u8CM="
+											},
+											"font": "Arial;13;0",
+											"left": 138,
+											"top": 456,
+											"width": 54.18994140625,
+											"height": 26,
+											"text": "Assign Course",
+											"wordWrap": true
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGbG9tatp5wHvU=",
+											"_parent": {
+												"$ref": "AAAAAAGbG9tatZ5u8CM="
+											},
+											"font": "Arial;13;0",
+											"left": 138,
+											"top": 429,
+											"width": 54.18994140625,
+											"height": 13
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 128,
+									"top": 424,
+									"width": 74.18994140625,
+									"height": 69,
+									"nameLabel": {
+										"$ref": "AAAAAAGbG9tatZ5vk5I="
+									},
+									"idLabel": {
+										"$ref": "AAAAAAGbG9tatp5wHvU="
+									}
+								},
+								{
+									"_type": "DFDDataStoreView",
+									"_id": "AAAAAAGbG9uVeJ57CoM=",
+									"_parent": {
+										"$ref": "AAAAAAGbG9PEUp3PHl4="
+									},
+									"model": {
+										"$ref": "AAAAAAGbG9uVd555Bv8="
+									},
+									"subViews": [
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGbG9uVeJ581og=",
+											"_parent": {
+												"$ref": "AAAAAAGbG9uVeJ57CoM="
+											},
+											"font": "Arial;13;0",
+											"left": 308,
+											"top": 210,
+											"width": 65.76171875,
+											"height": 26,
+											"text": "Course Database",
+											"wordWrap": true
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGbG9uVeJ59YB4=",
+											"_parent": {
+												"$ref": "AAAAAAGbG9uVeJ57CoM="
+											},
+											"font": "Arial;13;0",
+											"left": 293,
+											"top": 210,
+											"height": 13
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 288,
+									"top": 200,
+									"width": 95.76171875,
+									"height": 46,
+									"nameLabel": {
+										"$ref": "AAAAAAGbG9uVeJ581og="
+									},
+									"idLabel": {
+										"$ref": "AAAAAAGbG9uVeJ59YB4="
+									}
+								},
+								{
+									"_type": "DFDDataStoreView",
+									"_id": "AAAAAAGbG9wOX56LQu8=",
+									"_parent": {
+										"$ref": "AAAAAAGbG9PEUp3PHl4="
+									},
+									"model": {
+										"$ref": "AAAAAAGbG9wOXp6JBzc="
+									},
+									"subViews": [
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGbG9wOX56Ma60=",
+											"_parent": {
+												"$ref": "AAAAAAGbG9wOX56LQu8="
+											},
+											"font": "Arial;13;0",
+											"left": 308,
+											"top": 330,
+											"width": 65.76171875,
+											"height": 26,
+											"text": "Classroom Database",
+											"wordWrap": true
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGbG9wOX56NjXY=",
+											"_parent": {
+												"$ref": "AAAAAAGbG9wOX56LQu8="
+											},
+											"font": "Arial;13;0",
+											"left": 293,
+											"top": 330,
+											"height": 13
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 288,
+									"top": 320,
+									"width": 95.76171875,
+									"height": 46,
+									"nameLabel": {
+										"$ref": "AAAAAAGbG9wOX56Ma60="
+									},
+									"idLabel": {
+										"$ref": "AAAAAAGbG9wOX56NjXY="
+									}
+								},
+								{
+									"_type": "DFDDataFlowView",
+									"_id": "AAAAAAGbG93F7J6bXTQ=",
+									"_parent": {
+										"$ref": "AAAAAAGbG9PEUp3PHl4="
+									},
+									"model": {
+										"$ref": "AAAAAAGbG93F656ZSPI="
+									},
+									"subViews": [
+										{
+											"_type": "EdgeLabelView",
+											"_id": "AAAAAAGbG93F7J6cnBQ=",
+											"_parent": {
+												"$ref": "AAAAAAGbG93F7J6bXTQ="
+											},
+											"model": {
+												"$ref": "AAAAAAGbG93F656ZSPI="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": 161,
+											"top": 217,
+											"height": 13,
+											"alpha": 1.5707963267948966,
+											"distance": 15,
+											"hostEdge": {
+												"$ref": "AAAAAAGbG93F7J6bXTQ="
+											},
+											"edgePosition": 1
+										}
+									],
+									"font": "Arial;13;0",
+									"head": {
+										"$ref": "AAAAAAGbG9YqkJ3gMcg="
+									},
+									"tail": {
+										"$ref": "AAAAAAGbG9uVeJ57CoM="
+									},
+									"lineStyle": 2,
+									"points": "288:224;176:224;176:140",
+									"nameLabel": {
+										"$ref": "AAAAAAGbG93F7J6cnBQ="
+									}
+								}
+							]
+						},
+						{
+							"_type": "DFDProcess",
+							"_id": "AAAAAAGbG9Yqj53eLa0=",
+							"_parent": {
+								"$ref": "AAAAAAGbG9PEUp3OjO0="
+							},
+							"name": "Student registration",
+							"ownedElements": [
+								{
+									"_type": "DFDDataFlow",
+									"_id": "AAAAAAGbG9ovdJ5PW4s=",
+									"_parent": {
+										"$ref": "AAAAAAGbG9Yqj53eLa0="
+									},
+									"source": {
+										"$ref": "AAAAAAGbG9Yqj53eLa0="
+									},
+									"target": {
+										"$ref": "AAAAAAGbG9eTPp4ngFs="
+									}
+								}
+							]
+						},
+						{
+							"_type": "DFDProcess",
+							"_id": "AAAAAAGbG9ZtLZ3zSbY=",
+							"_parent": {
+								"$ref": "AAAAAAGbG9PEUp3OjO0="
+							},
+							"name": "Class registration"
+						},
+						{
+							"_type": "DFDExternalEntity",
+							"_id": "AAAAAAGbG9cVg54CF6s=",
+							"_parent": {
+								"$ref": "AAAAAAGbG9PEUp3OjO0="
+							},
+							"name": "College Student",
+							"ownedElements": [
+								{
+									"_type": "DFDDataFlow",
+									"_id": "AAAAAAGbG9n6/55FAac=",
+									"_parent": {
+										"$ref": "AAAAAAGbG9cVg54CF6s="
+									},
+									"source": {
+										"$ref": "AAAAAAGbG9cVg54CF6s="
+									},
+									"target": {
+										"$ref": "AAAAAAGbG9Yqj53eLa0="
+									}
+								}
+							]
+						},
+						{
+							"_type": "DFDExternalEntity",
+							"_id": "AAAAAAGbG9cnmZ4OMS0=",
+							"_parent": {
+								"$ref": "AAAAAAGbG9PEUp3OjO0="
+							},
+							"name": "Lecture"
+						},
+						{
+							"_type": "DFDExternalEntity",
+							"_id": "AAAAAAGbG9c7Ap4aaDo=",
+							"_parent": {
+								"$ref": "AAAAAAGbG9PEUp3OjO0="
+							},
+							"name": "Administrator"
+						},
+						{
+							"_type": "DFDDataStore",
+							"_id": "AAAAAAGbG9eTPp4ngFs=",
+							"_parent": {
+								"$ref": "AAAAAAGbG9PEUp3OjO0="
+							},
+							"name": "Student Database"
+						},
+						{
+							"_type": "DFDDataStore",
+							"_id": "AAAAAAGbG9e82Z4zMIs=",
+							"_parent": {
+								"$ref": "AAAAAAGbG9PEUp3OjO0="
+							},
+							"name": "Lecture Database"
+						},
+						{
+							"_type": "DFDProcess",
+							"_id": "AAAAAAGbG9rWbp5bahM=",
+							"_parent": {
+								"$ref": "AAAAAAGbG9PEUp3OjO0="
+							},
+							"name": "Manage Lectures"
+						},
+						{
+							"_type": "DFDProcess",
+							"_id": "AAAAAAGbG9tatZ5sVLI=",
+							"_parent": {
+								"$ref": "AAAAAAGbG9PEUp3OjO0="
+							},
+							"name": "Assign Course"
+						},
+						{
+							"_type": "DFDDataStore",
+							"_id": "AAAAAAGbG9uVd555Bv8=",
+							"_parent": {
+								"$ref": "AAAAAAGbG9PEUp3OjO0="
+							},
+							"name": "Course Database",
+							"ownedElements": [
+								{
+									"_type": "DFDDataFlow",
+									"_id": "AAAAAAGbG93F656ZSPI=",
+									"_parent": {
+										"$ref": "AAAAAAGbG9uVd555Bv8="
+									},
+									"source": {
+										"$ref": "AAAAAAGbG9uVd555Bv8="
+									},
+									"target": {
+										"$ref": "AAAAAAGbG9Yqj53eLa0="
+									}
+								}
+							]
+						},
+						{
+							"_type": "DFDDataStore",
+							"_id": "AAAAAAGbG9wOXp6JBzc=",
+							"_parent": {
+								"$ref": "AAAAAAGbG9PEUp3OjO0="
+							},
+							"name": "Classroom Database"
+						}
+					]
+				}
+			]
+		}
+	]
+}
