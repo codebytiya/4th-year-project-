@@ -1,0 +1,97 @@
+<mxfile host="65bd71144e">
+    <diagram name="Page-1" id="jj-eQzFBRDa6eR-AhoE8">
+        <mxGraphModel dx="2279" dy="1784" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="22" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="jhBc7wsBK-tQmzvmmb11-30" target="jhBc7wsBK-tQmzvmmb11-34">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="jhBc7wsBK-tQmzvmmb11-30" target="jhBc7wsBK-tQmzvmmb11-41">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="jhBc7wsBK-tQmzvmmb11-30" target="25">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="jhBc7wsBK-tQmzvmmb11-30" target="29">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="jhBc7wsBK-tQmzvmmb11-30" value="Lecture" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-785" y="-530" width="30" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="jhBc7wsBK-tQmzvmmb11-32" target="jhBc7wsBK-tQmzvmmb11-12">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="jhBc7wsBK-tQmzvmmb11-32" target="jhBc7wsBK-tQmzvmmb11-10">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="jhBc7wsBK-tQmzvmmb11-32" target="jhBc7wsBK-tQmzvmmb11-11">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="jhBc7wsBK-tQmzvmmb11-32" target="jhBc7wsBK-tQmzvmmb11-27">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="jhBc7wsBK-tQmzvmmb11-32" value="Student" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
+                    <mxGeometry x="-815" y="-865" width="30" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="peJtrjKsBOqqqJl7hVau-2" target="jhBc7wsBK-tQmzvmmb11-44">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="peJtrjKsBOqqqJl7hVau-2" target="Wu9VRMaAY6j5SkODWnqO-9">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="peJtrjKsBOqqqJl7hVau-2" target="Wu9VRMaAY6j5SkODWnqO-8">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="peJtrjKsBOqqqJl7hVau-2" target="27">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="peJtrjKsBOqqqJl7hVau-2" value="Admin" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
+                    <mxGeometry x="-80" y="-810" width="30" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
+                    <mxGeometry x="-710" y="-1000" width="590" height="690" as="geometry"/>
+                </mxCell>
+                <mxCell id="Wu9VRMaAY6j5SkODWnqO-9" value="Schedule class timetable" style="ellipse;whiteSpace=wrap;html=1;" parent="3" vertex="1">
+                    <mxGeometry x="370" y="230" width="190" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="jhBc7wsBK-tQmzvmmb11-44" value="Enrol student" style="ellipse;whiteSpace=wrap;html=1;" parent="3" vertex="1">
+                    <mxGeometry x="345" y="150" width="220" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="Wu9VRMaAY6j5SkODWnqO-8" value="Manage users" style="ellipse;whiteSpace=wrap;html=1;" parent="3" vertex="1">
+                    <mxGeometry x="360" y="80" width="200" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="jhBc7wsBK-tQmzvmmb11-11" value="View timetable" style="ellipse;whiteSpace=wrap;html=1;" parent="3" vertex="1">
+                    <mxGeometry x="42.5" y="145" width="215" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="jhBc7wsBK-tQmzvmmb11-12" value="View grades" style="ellipse;whiteSpace=wrap;html=1;" parent="3" vertex="1">
+                    <mxGeometry x="42.5" y="210" width="220" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="jhBc7wsBK-tQmzvmmb11-27" value="Download transcript" style="ellipse;whiteSpace=wrap;html=1;" parent="3" vertex="1">
+                    <mxGeometry x="42.5" y="270" width="210" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="Schedule exam timetable" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="3">
+                    <mxGeometry x="370" y="310" width="190" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="jhBc7wsBK-tQmzvmmb11-34" value="Upload grades" style="ellipse;whiteSpace=wrap;html=1;" parent="3" vertex="1">
+                    <mxGeometry x="45" y="460" width="190" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="jhBc7wsBK-tQmzvmmb11-41" value="Create gradebook" style="ellipse;whiteSpace=wrap;html=1;" parent="3" vertex="1">
+                    <mxGeometry x="40" y="540" width="195" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="Register class" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="3">
+                    <mxGeometry x="47.5" y="620" width="187.5" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="Record student attendance" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="3">
+                    <mxGeometry x="45" y="380" width="190" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="ICBM Use Case" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="3">
+                    <mxGeometry x="240" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="jhBc7wsBK-tQmzvmmb11-10" value="Register" style="ellipse;whiteSpace=wrap;html=1;" parent="3" vertex="1">
+                    <mxGeometry x="37.5" y="80" width="215" height="50" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
