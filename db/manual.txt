@@ -1,0 +1,118 @@
+To manualy add each table to the database, follow the order below
+
+CREATE TABLE users (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    role ENUM('student', 'lecture', 'admin') NOT NULL,
+    date_registered DATE
+);
+
+CREATE TABLE admin (
+    id INT PRIMARY KEY,
+    firstname VARCHAR(255),
+    lastname VARCHAR(255),
+    FOREIGN KEY (id) REFERENCES users(id)
+);
+
+CREATE TABLE lectures (
+    id INT PRIMARY KEY,
+    user_id INT,
+    firstname VARCHAR(255),
+    lastname VARCHAR(255),
+    qualification VARCHAR(255),
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
+
+CREATE TABLE Student (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    firstname VARCHAR(255),
+    lastname VARCHAR(255),
+    student_no VARCHAR(50),
+    user_id INT,
+    course_id INT,
+    year INT,
+    semester INT,
+    campus ENUM('BT', 'LL', 'MZ'),
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
+
+CREATE TABLE Course (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    code VARCHAR(50),
+    name VARCHAR(255),
+    duration INT
+);
+
+CREATE TABLE Modules (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    course_id INT,
+    name VARCHAR(255),
+    code VARCHAR(50),
+    FOREIGN KEY (course_id) REFERENCES Course(id)
+);
+
+CREATE TABLE module_instances (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    module_id INT,
+    course_id INT,
+    lecture_id INT,
+    semester ENUM('1', '2', '3', '4'),
+    FOREIGN KEY (module_id) REFERENCES Modules(id),
+    FOREIGN KEY (course_id) REFERENCES Course(id),
+    FOREIGN KEY (lecture_id) REFERENCES lectures(id)
+);
+
+CREATE TABLE student_registrations (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    student_id INT,
+    module_instance_id INT,
+    registered_on DATETIME,
+    status ENUM('registered', 'reserved'),
+    date DATE,
+    FOREIGN KEY (student_id) REFERENCES Student(id),
+    FOREIGN KEY (module_instance_id) REFERENCES module_instances(id)
+);
+
+CREATE TABLE grade_components (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    module_instance_id INT,
+    name VARCHAR(255),
+    weight DECIMAL(5,2),
+    FOREIGN KEY (module_instance_id) REFERENCES module_instances(id)
+);
+
+CREATE TABLE student_component_grades (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    student_registration_id INT,
+    component_id INT,
+    mark DECIMAL(5,2),
+    FOREIGN KEY (student_registration_id) REFERENCES student_registrations(id),
+    FOREIGN KEY (component_id) REFERENCES grade_components(id)
+);
+
+CREATE TABLE final_grades (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    student_registration_id INT,
+    final_mark DECIMAL(5,2),
+    grade_letter VARCHAR(5),
+    FOREIGN KEY (student_registration_id) REFERENCES student_registrations(id)
+);
+
+CREATE TABLE Exams (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    module_instance_id INT,
+    exam_type ENUM('midterm', 'final', 'clash', 'repeat', 'deffared'),
+    exam_date DATE,
+    FOREIGN KEY (module_instance_id) REFERENCES module_instances(id)
+);
+
+CREATE TABLE Timetables (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    module_instance_id INT,
+    day_of_the_week ENUM('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'),
+    start_time TIME,
+    end_time TIME,
+    room VARCHAR(255),
+    FOREIGN KEY (module_instance_id) REFERENCES module_instances(id)
+);
