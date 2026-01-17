@@ -1,5 +1,8 @@
 To manualy add each table to the database, follow the order below
 
+1. User Management & Core Profiles
+These tables store the primary identities for anyone logging into the system.
+
 CREATE TABLE users (
     id INT PRIMARY KEY AUTO_INCREMENT,
     username VARCHAR(255) NOT NULL,
@@ -37,6 +40,9 @@ CREATE TABLE Student (
     FOREIGN KEY (user_id) REFERENCES users(id)
 );
 
+2. Academic Structure
+These tables define the courses, modules, and how they are scheduled/assigned.
+
 CREATE TABLE Course (
     id INT PRIMARY KEY AUTO_INCREMENT,
     code VARCHAR(50),
@@ -62,6 +68,9 @@ CREATE TABLE module_instances (
     FOREIGN KEY (course_id) REFERENCES Course(id),
     FOREIGN KEY (lecture_id) REFERENCES lectures(id)
 );
+
+3. Student Registration & Grading
+These tables track student enrollment in specific modules and their performance.
 
 CREATE TABLE student_registrations (
     id INT PRIMARY KEY AUTO_INCREMENT,
@@ -98,6 +107,9 @@ CREATE TABLE final_grades (
     grade_letter VARCHAR(5),
     FOREIGN KEY (student_registration_id) REFERENCES student_registrations(id)
 );
+
+4. Scheduling & Exams
+The final layer handles the logistics of time and assessment dates.
 
 CREATE TABLE Exams (
     id INT PRIMARY KEY AUTO_INCREMENT,
