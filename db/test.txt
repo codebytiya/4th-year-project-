@@ -1,0 +1,113 @@
+1. Users and Profiles
+First, we create the identities. Note that the id in admin, lectures, and Student must correspond to an existing users.id.
+
+-- Create Users
+INSERT INTO users (username, password, role, date_registered) VALUES 
+('admin_user', 'hash_admin123', 'admin', '2023-01-01'),
+('dr_smith', 'hash_lecture456', 'lecture', '2023-01-05'),
+('jdoe_student', 'hash_student789', 'student', '2023-01-10');
+
+-- Profile Details
+INSERT INTO admin (id, firstname, lastname) VALUES (1, 'Alice', 'Johnson');
+
+INSERT INTO lectures (id, user_id, firstname, lastname, qualification) 
+VALUES (1, 2, 'Robert', 'Smith', 'PhD in Computer Science');
+
+2. Courses and Modules
+This sets up the academic catalog.
+
+INSERT INTO Course (code, name, duration) 
+VALUES ('CS101', 'Bachelor of Computer Science', 4);
+
+INSERT INTO Modules (course_id, name, code) 
+VALUES (1, 'Introduction to Databases', 'DB101');
+
+-- Linking the module to a specific instance (semester/lecturer)
+INSERT INTO module_instances (module_id, course_id, lecture_id, semester) 
+VALUES (1, 1, 1, '1');
+
+3. Student Enrollment
+Now we register the student to the university and then to a specific module instance.
+
+-- Student Profile
+INSERT INTO Student (firstname, lastname, student_no, user_id, course_id, year, semester, campus) 
+VALUES ('John', 'Doe', 'S2023001', 3, 1, 1, 1, 'BT');
+
+-- Register the student for the Module Instance
+INSERT INTO student_registrations (student_id, module_instance_id, registered_on, status, date) 
+VALUES (1, 1, '2023-02-01 09:00:00', 'registered', '2023-02-01');
+
+To ensure the test data works correctly, I have provided it in the exact order required to satisfy the foreign key constraints. This data populates a basic scenario: one admin, one lecturer, one student, and a single module instance they are all connected to.
+
+1. Users and Profiles
+First, we create the identities. Note that the id in admin, lectures, and Student must correspond to an existing users.id.
+
+SQL
+
+-- Create Users
+INSERT INTO users (username, password, role, date_registered) VALUES 
+('admin_user', 'hash_admin123', 'admin', '2023-01-01'),
+('dr_smith', 'hash_lecture456', 'lecture', '2023-01-05'),
+('jdoe_student', 'hash_student789', 'student', '2023-01-10');
+
+-- Profile Details
+INSERT INTO admin (id, firstname, lastname) VALUES (1, 'Alice', 'Johnson');
+
+INSERT INTO lectures (id, user_id, firstname, lastname, qualification) 
+VALUES (1, 2, 'Robert', 'Smith', 'PhD in Computer Science');
+
+2. Courses and Modules
+This sets up the academic catalog.
+
+SQL
+
+INSERT INTO Course (code, name, duration) 
+VALUES ('CS101', 'Bachelor of Computer Science', 4);
+
+INSERT INTO Modules (course_id, name, code) 
+VALUES (1, 'Introduction to Databases', 'DB101');
+
+-- Linking the module to a specific instance (semester/lecturer)
+INSERT INTO module_instances (module_id, course_id, lecture_id, semester) 
+VALUES (1, 1, 1, '1');
+
+3. Student Enrollment
+Now we register the student to the university and then to a specific module instance.
+
+SQL
+
+-- Student Profile
+INSERT INTO Student (firstname, lastname, student_no, user_id, course_id, year, semester, campus) 
+VALUES ('John', 'Doe', 'S2023001', 3, 1, 1, 1, 'BT');
+
+-- Register the student for the Module Instance
+INSERT INTO student_registrations (student_id, module_instance_id, registered_on, status, date) 
+VALUES (1, 1, '2023-02-01 09:00:00', 'registered', '2023-02-01');
+
+4. Grading Components and Marks
+This covers how the module is graded and what the student scored.
+
+-- Define the grading breakdown (e.g., 40% Midterm, 60% Final)
+INSERT INTO grade_components (module_instance_id, name, weight) VALUES 
+(1, 'Midterm Exam', 40.00),
+(1, 'Final Project', 60.00);
+
+-- Assign marks to the student for those components
+INSERT INTO student_component_grades (student_registration_id, component_id, mark) VALUES 
+(1, 1, 75.50),
+(1, 2, 82.00);
+
+-- Final grade calculation
+INSERT INTO final_grades (student_registration_id, final_mark, grade_letter) 
+VALUES (1, 79.40, 'A-');
+
+5. Logistics (Exams and Timetables)
+Finally, we schedule the classes and the exam dates.
+
+-- Class Schedule
+INSERT INTO Timetables (module_instance_id, day_of_the_week, start_time, end_time, room) 
+VALUES (1, 'Monday', '08:00:00', '10:00:00', 'Lab 4');
+
+-- Exam Date
+INSERT INTO Exams (module_instance_id, exam_type, exam_date) 
+VALUES (1, 'midterm', '2023-04-15');
